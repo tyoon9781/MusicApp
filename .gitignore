@@ -1,3 +1,7 @@
+### activate python venv ###
+_activate.*
+
+
 ### python environment ###
 .venv/
 
