@@ -21,3 +21,7 @@ __pycache__/
 
 ### django secret ###
 _secret.py
+
+
+### django seperate environment ###
+app_main.py
