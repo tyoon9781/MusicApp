@@ -24,4 +24,4 @@ _secret.py
 
 
 ### django seperate environment ###
-app_main.py
+start_app.py
