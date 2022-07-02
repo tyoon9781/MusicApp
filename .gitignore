@@ -1,0 +1,19 @@
+### python environment ###
+.venv/
+
+
+### vscode environment ###
+.vscode/
+
+
+### python ###
+*.pyc
+__pycache__/
+
+
+### DB data ###
+*db.sqlite3
+
+
+### django secret ###
+_secret.py
