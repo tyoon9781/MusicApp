@@ -4,7 +4,7 @@ import os
 import sys
 
 CMD = ["runserver", "0.0.0.0:8008"]
-DJANGO_SETTING_PATH = 'config.settings.dev'
+DJANGO_SETTING_PATH = 'config.settings.local'
 sys_argv = [sys.argv[0], *CMD]
 
 def main():
