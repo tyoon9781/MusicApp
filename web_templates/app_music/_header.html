@@ -4,8 +4,11 @@
 
 <header>
     <nav>
-        <a href="#"><img class="nav-logo" src="{% static 'images/QBIC_icon.png' %}" alt=""></a>
-        <div class="nav-links">
+        <!-- <a href="#"><img class="nav-logo" src="{% static 'images/QBIC_icon.png' %}" alt=""></a> -->
+        <img class="nav-logo" src="{% static 'images/QBIC_icon.png' %}" alt="">
+        <a href="#" class="nav-title">Web Practice</a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -13,5 +16,8 @@
                 <li><a href="#">BLOG</a></li>
             </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
 </header>
+
+<script src="{% static 'app_music/_header.js' %}"></script>

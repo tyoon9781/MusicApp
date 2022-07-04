@@ -10,15 +10,18 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'images/QBIC_icon/png' %}">
     <title>MusicInfo</title>
 </head>
+
 <body>
 
-{% include "app_music/_header.html" %}
+    {% include "app_music/_header.html" %}
 
-{% block content %}
-{% endblock content %}
+    {% block content %}
+    {% endblock content %}
 
-{% include "app_music/_footer.html" %}
+    {% include "app_music/_footer.html" %}
 
 </body>
-<script src="{% static 'app_music/_base.js' %}"></script>
+
+    <script src="{% static 'app_music/_base.js' %}"></script>
+    <script src="https://kit.fontawesome.com/a2b7a78143.js" crossorigin="anonymous"></script>
 </html>

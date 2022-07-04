@@ -1,0 +1,16 @@
+.contents-container{
+    margin: 20px;
+    background-color: aqua;
+}
+
+.done-contents{
+    color:#888888;
+}
+
+.small-contents{
+    font-size: 12px;
+}
+
+.todo-contents{
+    font-weight: bold;
+}
