@@ -5,32 +5,58 @@
 
 <link rel="stylesheet" href="{% static 'app_music/index.css' %}">
 
-<div class="contents-container">
-    <h3>학습완료 목록</h3>
-    <ol class="small-contents done-contents">
-        <li>[C 언어] 자료구조</li>
-        <li>[C 언어] 알고리즘</li>
-        <li>[python] Data management with numpy, pandas</li>
-        <li>[python] GUI Application with PyQT5</li>
-        <li>[python] tensorflow Deep learning Framework</li>
-        <li>[python] Pytorch Deep learning Framework</li>
-        <li>[git]Configruation Management</li>
-        <li>[AWS]EC2(elastic Cloud Computing) Management</li>
-        <li>[AWS]S3(Simple Storage Service) Management</li>
-        <li>[AWS]RDB(relation DataBase) Migration(PostgreSQL)</li>
-        <li>[AWS]Lambda Event Handler Trigger Design by python</li>
-    </ol>
-    <hr>
-    <h3>학습 진행할 목록</h3>
-    <ul class="small-contents todo-contents">
-        <li>[Java] 기초</li>
-        <li>[Java] Spring Web Application Framework</li>
-        <li>[python] Django Web Application Framework</li>
-        <li>[DB] SQL 심화</li>
-        <li>[javascript] 기초</li>
-        <li>[HTML + CSS]Frontend 기초</li>
-        <li>[React] Frontend 심화</li>
-    </ul>
-</div>
+<main>
+    <div class="current_screen_info" id="currentScreenInfo"></div>
+    <div class="study-contents">
+        <div class="done-contents">
+            <h3>학습완료 목록</h3>
+            <details>
+                <summary>세부정보</summary>
+                <ol class="small-contents">
+                    <li>[C 언어] 자료구조</li>
+                    <li>[C 언어] 알고리즘</li>
+                    <li>[C 언어] MCU Firmware</li>
+                    <li>[Signal Processing] FFT Analysis</li>
+                    <li>[Signal Processing] Image processing</li>
+                    <li>[Signal Processing] ISP Tuning</li>
+                    <li>[python] Data management with numpy, pandas</li>
+                    <li>[python] GUI Application with PyQT5</li>
+                    <li>[tensorflow] Computing vision with CNN</li>
+                    <li>[pytorch] Computing vision with U-net</li>
+                    <li>[python] Django Web Application Framework</li>
+                    <li>[Web Server] Nginx(Web server), gunicorn(middleware)</li>
+                    <li>[HTML + CSS] Frontend 기초</li>
+                    <li>[DB] with Sqlite3</li>
+                    <li>[javascript] 기초</li>
+                    <li>[CI/CD] Configuration Management with git</li>
+                    <li>[CI/CD] Migration with jenkins</li>
+                    <li>[Cloud(AWS)] EC2(elastic Cloud Computing) Management</li>
+                    <li>[Cloud(AWS)] S3(Simple Storage Service) Management</li>
+                    <li>[Cloud(AWS)] RDB(relation DataBase) Design</li>
+                    <li>[Cloud(AWS)] Lambda Event Handler Trigger Design</li>
+                </ol>
+            </details>
+        </div>
+        <hr>
+        <div class="todo-contents">
+            <h3>학습 진행할 목록</h3>
+            <details>
+                <summary>세부정보</summary>
+                <ul>
+                    <li>[Java] 기초</li>
+                    <li>[Java] Spring Web Application Framework</li>
+                    <li>[DB] SQL 심화</li>
+                    <li>[javascript] 심화</li>
+                    <li>[HTML + CSS] Frontend 심화</li>
+                    <li>[React] 기초 </li>
+                    <li>[Container] Docker</li>
+                    <li>[Orchestration] kubernetes</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+</main>
+
+<script src="{% static 'app_music/index.js' %}"></script>
 
 {% endblock content %}
