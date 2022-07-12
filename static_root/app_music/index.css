@@ -1,0 +1,35 @@
+.current_screen_info{
+    margin: 20px;
+    color:grey;
+}
+
+.study-contents{
+    margin: 20px;
+}
+
+.done-contents{
+    margin: 50px 0;
+    color:#888888;
+}
+
+.small-contents{
+    font-size: 12px;
+}
+
+.todo-contents{
+    margin: 50px 0;
+}
+
+.todo-contents li{
+    /* font-weight: bold; */
+    font-size:16px;
+}
+
+details[open] summary~*{
+    animation: sweep 0.5s;
+}
+
+@keyframes sweep {
+    0%      {opacity: 0; transform: translateX(-10px)}
+    100%    {opacity: 1; transform: translateX(0)}
+}
